@@ -1,0 +1,92 @@
+# AGI OS Requirements
+# Python 3.11+
+
+# Core Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-dotenv==1.0.0
+
+# Web Scraping & Discovery
+scrapy==2.11.0
+beautifulsoup4==4.12.2
+selenium==4.15.2
+requests==2.31.0
+lxml==4.9.3
+
+# Machine Learning & AI
+torch==2.1.1
+transformers==4.35.2
+sentence-transformers==2.2.2
+stable-baselines3==2.2.1
+gymnasium==0.29.1
+
+# LLM APIs
+openai==1.3.7
+anthropic==0.7.7
+
+# Vector Database
+faiss-cpu==1.7.4
+pinecone-client==2.2.4
+
+# Database
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.23
+alembic==1.12.1
+
+# Message Queue
+pika==1.3.2
+celery==5.3.4
+redis==5.0.1
+
+# Analytics
+pandas==2.1.3
+numpy==1.26.2
+clickhouse-driver==0.2.6
+
+# Blockchain
+web3==6.11.3
+eth-account==0.10.0
+
+# Payment Processing
+stripe==7.4.0
+
+# NLP & Text Processing
+spacy==3.7.2
+nltk==3.8.1
+
+# Code Analysis
+radon==6.0.1
+astroid==3.0.1
+
+# Utilities
+python-multipart==0.0.6
+aiofiles==23.2.1
+httpx==0.25.2
+tenacity==8.2.3
+pyyaml==6.0.1
+
+# Monitoring & Logging
+prometheus-client==0.19.0
+python-json-logger==2.0.7
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+faker==20.1.0
+
+# Development
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+pre-commit==3.5.0
+
+# Desktop Automation (for Phase 4)
+pyautogui==0.9.54
+mss==9.0.1
+pynput==1.7.6
+opencv-python==4.8.1.78
+easyocr==1.7.1
+
