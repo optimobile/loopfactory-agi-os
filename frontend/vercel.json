@@ -1,0 +1,11 @@
+{
+  "buildCommand": "pnpm install && pnpm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "installCommand": "pnpm install",
+  "devCommand": "pnpm run dev",
+  "env": {
+    "VITE_API_URL": "https://loopfactory-api.railway.app"
+  }
+}
+

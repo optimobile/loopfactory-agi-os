@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: loopfactory-api
+    env: python
+    region: oregon
+    plan: free
+    branch: master
+    rootDir: backend
+    buildCommand: pip install -r ../requirements.txt
+    startCommand: uvicorn test_api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: SUPABASE_URL
+        value: https://tkyspttlkvthyykwrsdv.supabase.co
+      - key: SUPABASE_ANON_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRreXNwdGxsa3Z0aHl5a3dyc2R2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ4MTI0OTAsImV4cCI6MjA3MDM4ODQ5MH0.h1Hf2eUcmq5ssWVktkCjzUp9vUzc22Rno9pU14kQzKg
+      - key: PYTHON_VERSION
+        value: 3.11.0
+
